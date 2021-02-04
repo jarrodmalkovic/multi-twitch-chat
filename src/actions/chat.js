@@ -1,12 +1,12 @@
 import tmi from 'tmi.js';
 import { v4 as uuidv4 } from 'uuid';
 import Message from '../components/Message';
-import { CHANNEL } from '../constants';
+import { CHANNELS } from '../constants';
 
 const handleChatMessages = (setMessages, globalBadges) => {
 	const client = new tmi.Client({
 		connection: { reconnect: true },
-		channels: [CHANNEL],
+		channels: CHANNELS,
 	});
 
 	client.on('message', async (channel, tags, message, self) => {
@@ -24,6 +24,7 @@ const handleChatMessages = (setMessages, globalBadges) => {
 				key={uuidv4()}
 				globalBadges={globalBadges}
 				message={messageData}
+				channel={channel}
 			/>,
 		]);
 	});
