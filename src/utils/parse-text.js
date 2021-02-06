@@ -58,7 +58,7 @@ const parseText = (
 						<Tooltip id='button-tooltip'>
 							<img src={largeImg} alt={word} />
 							<p className='emote-overlay-text'>{word}</p>
-							<p className='emote-overlay-text'>Global BTTV Emote</p>
+							<p className='emote-overlay-text'>Channel BTTV Emote</p>
 						</Tooltip>
 					}
 				>
@@ -98,7 +98,7 @@ const parseText = (
 						<Tooltip id='button-tooltip'>
 							<img src={largeImg} alt={word} />
 							<p className='emote-overlay-text'>{word}</p>
-							<p className='emote-overlay-text'>Global FFZ Emote</p>
+							<p className='emote-overlay-text'>Channel FFZ Emote</p>
 						</Tooltip>
 					}
 				>
