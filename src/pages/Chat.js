@@ -1,9 +1,9 @@
 import { useEffect, useState, useCallback } from 'react';
 import MessageContainer from '../components/MessageContainer';
-import { handleChatMessages } from '../api/chat';
-import { getGlobalBadges } from '../api/badges';
+import { connectClient, disconnectClient } from '../api/chat';
+import { getBadges } from '../api/badges';
 import getTwitchChannelIds from '../api/channels';
-import getChannelEmotes from '../api/emotes';
+import getEmotes from '../api/emotes';
 
 const Chat = ({ match }) => {
 	const [messages, setMessages] = useState([]);
@@ -16,17 +16,15 @@ const Chat = ({ match }) => {
 
 		const twitchChannelIds = await getTwitchChannelIds(channels);
 
-		const [globalBadges, customBadges] = await getGlobalBadges(
-			channels,
-			twitchChannelIds
-		);
+		const [
+			[globalBadges, customBadges],
+			[BTTVChannelEmotes, FFZChannelEmotes],
+		] = await Promise.all([
+			getBadges(channels, twitchChannelIds),
+			getEmotes(channels, twitchChannelIds),
+		]);
 
-		const [BTTVChannelEmotes, FFZChannelEmotes] = await getChannelEmotes(
-			channels,
-			twitchChannelIds
-		);
-
-		await handleChatMessages(
+		await connectClient(
 			channels,
 			setMessages,
 			globalBadges,
@@ -38,6 +36,7 @@ const Chat = ({ match }) => {
 
 	useEffect(() => {
 		onLoad();
+		return disconnectClient;
 	}, [onLoad]);
 
 	useEffect(() => {

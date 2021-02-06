@@ -1,30 +1,40 @@
 import axios from 'axios';
 
+const getTwitchChannelId = async (channel, twitchChannelIds) => {
+	try {
+		const config = {
+			headers: {
+				'Client-ID': 'z1wktnxiwogyupxg1p25l9tjxf1qjj',
+				Accept: 'application/vnd.twitchtv.v5+json',
+			},
+		};
+
+		const channelData = await axios.get(
+			`https://api.twitch.tv/kraken/users?login=${channel}`,
+			config
+		);
+
+		const channelId = channelData.data.users[0]._id;
+
+		twitchChannelIds[channel] = channelId;
+	} catch (err) {
+		console.error(err);
+	}
+};
+
 const getTwitchChannelIds = async (channels) => {
 	try {
-		const channelsObj = {};
+		const twitchChannelIds = {};
 
-		for (const channel of channels) {
-			const config = {
-				headers: {
-					'Client-ID': 'z1wktnxiwogyupxg1p25l9tjxf1qjj',
-					Accept: 'application/vnd.twitchtv.v5+json',
-				},
-			};
+		await Promise.all(
+			channels.map(async (channel) =>
+				getTwitchChannelId(channel, twitchChannelIds)
+			)
+		);
 
-			const channelData = await axios.get(
-				`https://api.twitch.tv/kraken/users?login=${channel}`,
-				config
-			);
-
-			const channelId = channelData.data.users[0]._id;
-
-			channelsObj[channel] = channelId;
-		}
-
-		return channelsObj;
+		return twitchChannelIds;
 	} catch (err) {
-		console.log(err);
+		console.error(err);
 	}
 };
 

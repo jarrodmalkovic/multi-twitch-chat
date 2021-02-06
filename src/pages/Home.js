@@ -11,7 +11,7 @@ const Home = () => {
 
 	const onSubmit = (e) => {
 		e.preventDefault();
-		history.push(`/chat/${channels.join(',')}`);
+		history.push(`/channels/${channels.join(',')}`);
 	};
 
 	const onRemoveChannel = (e) => {
