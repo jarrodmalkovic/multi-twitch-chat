@@ -22,7 +22,7 @@
 - Displays global Twitch emotes and badges
 - Support for BTTV and FFZ emotes
 
-## Screenshots
+## 📸 Screenshots
 
 <table>
   <tr>
