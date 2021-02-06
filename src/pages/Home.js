@@ -34,12 +34,14 @@ const Home = () => {
 
 	return (
 		<Container>
-			<h1>Multi Twitch Chat Viewer</h1>
+			<h1>Multi Twitch Chat</h1>
 			<h5>
-				This web app allows you to view multiple twitch chats from one single
-				page. Add the names of the channels you want to view below to get
-				started.
+				This web app allows you to read multiple twitch chats from one single
+				page.
 			</h5>
+			<h6>
+				Add the names of the channels you want to read below to get started!
+			</h6>
 			<Form onSubmit={onSubmit}>
 				{channels.length ? (
 					channels.map((channel, i) => (
