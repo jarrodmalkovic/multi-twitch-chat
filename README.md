@@ -1,9 +1,9 @@
-<h1 align="center">Mutli Twitch Chat Viewer</h1>
+<h1 align="center">Mutli Twitch Chat</h1>
 
 <h3 align="center">
   <a href="https://multichat.live/">Visit the live app</a> |
-  <a href="https://github.com/jarrodmalkovic/maze-solver/issues">Report Bug</a> |
-  <a href="https://github.com/jarrodmalkovic/maze-solver/issues">Request Feature</a> 
+  <a href="https://github.com/jarrodjm/multi-twitch-chat/issues">Report Bug</a> |
+  <a href="https://github.com/jarrodmalkovic/multi-twitch-chat/issues">Request Feature</a> 
 </h3>
 
 ![Tech logos](https://i.ibb.co/CpcxFbM/tech-info-multi-twitch-chat.png)
@@ -39,7 +39,7 @@
 
 ### Clone
 
-Clone this repo to your local machine using `https://github.com/jarrodjm/twitch-chat-viewer.git`
+Clone this repo to your local machine using `https://github.com/jarrodjm/multi-twitch-chat.git`
 
 ### Install the required dependencies
 
