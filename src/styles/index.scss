@@ -1,0 +1,11 @@
+$primary: #565656;
+
+@import '~bootstrap/scss/bootstrap';
+
+@import './app.scss';
+@import './message-text.scss';
+@import './message-container.scss';
+@import './user-badges.scss';
+@import './username.scss';
+@import './channel-name.scss';
+@import './emote.scss';
