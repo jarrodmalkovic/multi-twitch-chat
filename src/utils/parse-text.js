@@ -9,8 +9,6 @@ const parseText = (
 	channel,
 	FFZChannelEmotes
 ) => {
-	console.log(BTTVChannelEmotes);
-	console.log(channel);
 	const words = text.split(' ');
 	const emotesObj = {};
 	channel = channel.slice(1);

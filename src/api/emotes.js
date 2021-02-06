@@ -73,7 +73,6 @@ const getFFZEmotes = async (channels) => {
 			} catch (err) {}
 		}
 
-		console.log(FFZEmotes);
 		return FFZEmotes;
 	} catch (err) {
 		console.log(err);

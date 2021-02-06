@@ -13,7 +13,6 @@ const handleChatMessages = async (
 	try {
 		const client = new tmi.Client({
 			connection: { reconnect: true },
-			options: { debug: true },
 			channels,
 		});
 

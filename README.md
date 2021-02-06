@@ -17,7 +17,9 @@
 
 ## ✨ Features
 
-- Feature list coming soon
+- View multiple twitch channels chats on one single page
+- Displays global Twitch emotes and badges
+- Support for BTTV and FFZ emotes
 
 ## 🚀 Run Locally
 
