@@ -1,4 +1,4 @@
-$primary: #565656;
+$primary: #3c3b3b;
 
 @import '~bootstrap/scss/bootstrap';
 
@@ -9,3 +9,17 @@ $primary: #565656;
 @import './username.scss';
 @import './channel-name.scss';
 @import './emote.scss';
+
+.input-group input::placeholder {
+	color: rgb(84, 84, 84);
+}
+
+.input-group input:focus {
+	background-color: #272728;
+	color: white;
+}
+
+.input-group input {
+	background-color: #18181b;
+	color: white;
+}
