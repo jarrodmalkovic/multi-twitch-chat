@@ -10,22 +10,24 @@ const Chat = ({ match }) => {
 	const MAX_ALLOWED_MESSAGES = 100;
 
 	const onLoad = useCallback(async () => {
-		const twitchChannelIds = await getTwitchChannelIds(
-			match.params.channels.split(',')
-		);
+		const channels = match.params.channels
+			.split(',')
+			.map((channel) => channel.toLowerCase());
+
+		const twitchChannelIds = await getTwitchChannelIds(channels);
 
 		const [globalBadges, customBadges] = await getGlobalBadges(
-			match.params.channels.split(','),
+			channels,
 			twitchChannelIds
 		);
 
 		const [BTTVChannelEmotes, FFZChannelEmotes] = await getChannelEmotes(
-			match.params.channels.split(','),
+			channels,
 			twitchChannelIds
 		);
 
 		await handleChatMessages(
-			match.params.channels.split(','),
+			channels,
 			setMessages,
 			globalBadges,
 			customBadges,
