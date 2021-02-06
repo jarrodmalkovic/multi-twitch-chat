@@ -22,19 +22,6 @@
 - Displays global Twitch emotes and badges
 - Support for BTTV and FFZ emotes
 
-## 📸 Screenshots
-
-<table>
-  <tr>
-    <td>Chat Screen</td>
-     <td>Home Page</td>
-  </tr>
-  <tr>
-    <td valign="top"><img src="https://i.ibb.co/mCX1kwG/Screenshot-of-Chat-Screen.png"/></td>
-    <td  valign="top"><img src="https://i.ibb.co/28xbTNW/Screenshot-of-homepage.png"/></td>
-  </tr>
- </table>
-
 ## 🚀 Run Locally
 
 ### Clone
@@ -52,12 +39,24 @@ npm run install
 ```bash
 npm run start
 ```
+## 📸 Screenshots
+
+<table>
+  <tr>
+    <td>Chat Screen</td>
+     <td>Home Page</td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="https://i.ibb.co/mCX1kwG/Screenshot-of-Chat-Screen.png"/></td>
+    <td  valign="top"><img src="https://i.ibb.co/28xbTNW/Screenshot-of-homepage.png"/></td>
+  </tr>
+ </table>
 
 ## 💻 Technologies
 
 Project is created with:
 
-- JavaScript, React, CSS, TMI.js and deployed using Netlify
+- JavaScript, React, Sass, Bootstrap, tmi.js and deployed using Netlify
 
 ## ⚖️ License
 
