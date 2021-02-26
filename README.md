@@ -2,7 +2,7 @@
 
 <h3 align="center">
   <a href="https://multichat.live/">Visit the live app</a> |
-  <a href="https://github.com/jarrodjm/multi-twitch-chat/issues">Report Bug</a> |
+  <a href="https://github.com/jarrodmalkovic/multi-twitch-chat/issues">Report Bug</a> |
   <a href="https://github.com/jarrodmalkovic/multi-twitch-chat/issues">Request Feature</a> 
 </h3>
 
