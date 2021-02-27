@@ -61,3 +61,11 @@ Project is created with:
 ## ⚖️ License
 
 This project is licensed under the Unlicense License
+
+<hr>
+
+<h3>
+  <a href="https://multichat.live/">Visit the live app</a> |
+  <a href="https://github.com/jarrodmalkovic/multi-twitch-chat/issues">Report Bug</a> |
+  <a href="https://github.com/jarrodmalkovic/multi-twitch-chat/issues">Request Feature</a> 
+</h3>
