@@ -24,9 +24,11 @@
 
 ## 🚀 Run Locally
 
-### Clone
+### Clone repo to your local machine
 
-Clone this repo to your local machine using `https://github.com/jarrodjm/multi-twitch-chat.git`
+```bash
+git clone https://github.com/jarrodjm/multi-twitch-chat.git
+```
 
 ### Install the required dependencies
 
@@ -39,6 +41,7 @@ npm run install
 ```bash
 npm run start
 ```
+
 ## 📸 Screenshots
 
 <table>
@@ -55,7 +58,6 @@ npm run start
 ## 💻 Technologies
 
 Project is created with:
-
 - JavaScript, React, Sass, Bootstrap, tmi.js and deployed using Netlify
 
 ## ⚖️ License
